@@ -1,2 +1,14 @@
-package com.example.kudago.model;public class Category {
+package com.example.kudago.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Category {
+    private Integer id;
+    private String slug;
+    private String name;
 }

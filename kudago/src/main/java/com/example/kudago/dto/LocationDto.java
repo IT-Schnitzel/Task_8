@@ -1,2 +1,8 @@
-package com.example.kudago.dto;public class LocationDto {
+package com.example.kudago.dto;
+import lombok.Data;
+
+@Data
+public class LocationDto {
+    private Long id;
+    private String name;
 }

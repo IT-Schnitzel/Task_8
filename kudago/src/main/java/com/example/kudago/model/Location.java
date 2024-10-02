@@ -1,2 +1,13 @@
-package com.example.kudago.model;public class Location {
+package com.example.kudago.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Location {
+    private String slug;
+    private String name;
 }
