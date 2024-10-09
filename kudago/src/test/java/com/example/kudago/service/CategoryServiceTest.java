@@ -10,7 +10,6 @@ import org.mockito.MockitoAnnotations;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 public class CategoryServiceTest {
-
     @Mock
     private CategoryRepo categoryRepository;  // Замоканный репозиторий
     @InjectMocks
