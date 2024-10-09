@@ -26,10 +26,10 @@ public class CurrencyTestRunnerTest {
     public void testFetchCurrencyRate() {
         CurrencyRateResponse expectedResponse = new CurrencyRateResponse("AUD", 0.67);
         when(currencyClient.fetchCurrencyRate("AUD")).thenReturn(expectedResponse);
-
-        // Call the service method instead of directly calling the client
         CurrencyRateResponse actualResponse = currencyService.fetchCurrencyRate("AUD");
         assertEquals(expectedResponse.getCurrency(), actualResponse.getCurrency());
         assertEquals(expectedResponse.getRate(), actualResponse.getRate());
     }
+
+    // Данный тест не работает из-за ошибок со связью с сервером, починить не получилось на данный момент
 }
